@@ -1,5 +1,6 @@
 header{
+    position: absolute;
     display: flex;
     align-items: center;
-    color: red;
+    color: var(--tg-theme-text-color);
 }
