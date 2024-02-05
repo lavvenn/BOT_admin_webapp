@@ -1,6 +1,108 @@
-header{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    color: var(--tg-theme-text-color);
+body{
+    background-color: var(--tg-theme-bg-color);
+    background: rgb(37, 38, 47);
+    height: 99vh;
 }
+
+.info{
+    overflow: auto;
+    width: 100%; /* Ширина контейнера */
+    height: 87%; /* Высота контейнера */
+    color:white;
+    margin-bottom: 10px;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    color: var(--tg-theme-text-color);
+    font-size: 44px;
+    color:white;
+}
+
+header h1{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.rules{
+    background-color: blue;
+    font-size: 40px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(77, 80, 101);
+}
+
+.rules p {
+    margin: 9px;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;    
+}
+
+ .inner .item{
+    background-color: rgb(77, 80, 101);
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+}  
+
+button{
+    position:absolute;
+    bottom: 5%;
+    right:50%;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    left: 5px;
+    right: 0;
+    bottom: 30px;
+    z-index: 10;
+}
+
+.user-info{
+    overflow: hidden;
+    background: rgb(77, 80, 101);
+    width: 80%; 
+    height: 150px;
+    border-radius: 10px; 
+    font-size: 70px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px ;
+
+}
+
+.name{
+    margin: 0px;
+    float: left;
+    
+}
+
+.role{
+    margin: 0px;
+    float: right;
+}
+
+.setings{
+    background-color: rgb(77, 80, 101);
+    width: 15%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+
+
+
+
