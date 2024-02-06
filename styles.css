@@ -75,23 +75,24 @@ button{
     background: rgb(77, 80, 101);
     width: 80%; 
     height: 150px;
-    border-radius: 10px; 
+    border-radius: 35px; 
     font-size: 70px;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;
     margin-right:20px ;
+    color: white;
 
 }
 
 .name{
-    margin: 0px;
+    margin: 27px;
     float: left;
     
 }
 
 .role{
-    margin: 0px;
+    margin: 27px;
     float: right;
 }
 
@@ -99,10 +100,5 @@ button{
     background-color: rgb(77, 80, 101);
     width: 15%;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 35px;
 }
-
-
-
-
-
