@@ -89,7 +89,7 @@ button{
     width: 80%; 
     height: 53px;
     border-radius: 35px; 
-    font-size: 70px;
+    font-size: small;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;
