@@ -11,16 +11,12 @@ let counter = 0
 
 
 
-// function changeStyleOnClick() {
-//     var elements = document.querySelectorAll('.clickable'); // выбираем все элементы с классом 'clickable'
-//     elements.forEach(function(element) {
-//         element.addEventListener('click', function() {
-//             this.style.grid_column_start = 1; // изменяем  элемент
-//             this.style.grid_column_start = 2; // изменяем  элемент
-//         });
-//     });
-//     console.log('all oooook')
-// }
+function changeElementStyles(element) {
+    // Пример изменения стилей grid-column-start и grid-column-end
+    element.style.gridColumnStart = '1'; // Устанавливаем значение grid-column-start
+    element.style.gridColumnEnd = '3'; // Устанавливаем значение grid-column-end
+}
+
 
 function AddElement(TEXT){
     counter++
@@ -28,12 +24,29 @@ function AddElement(TEXT){
     let cell = document.createElement("div");
     cell.innerHTML = TEXT;
     cell.className = 'item' + counter ;
-    // cell.onclick = changeStyleOnClick()
+    cell.addEventListener('click', function() {
+
+        
+        console.log('Объект был нажат', event.target);
+
+        changeElementStyles(event.target)
+
+        setTimeout(function() {
+            cell.classList.add('show');
+        }, 100);
+
+        
+
+
+    });
+
     gridd.appendChild(cell);
 
     setTimeout(function() {
         cell.classList.add('show');
     }, 100);
+
+    
 
     console.log(counter)
 }
