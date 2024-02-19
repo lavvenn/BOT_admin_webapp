@@ -1,7 +1,8 @@
 body{
-    background-color: var(--tg-theme-bg-color);
-    background: rgb(37, 38, 47);
+    /* background-color: var(--tg-theme-bg-color); */
+    background: var(--tg-theme-bg-color);
     height: 99vh;
+    color: var(--tg-theme-text-color);
 }
 
 /* имя чата */
@@ -10,9 +11,7 @@ header{
     width: 100%;
     text-align: center;
     height: 100px;
-    color: var(--tg-theme-text-color);
     font-size: 20px;
-    color:white;
 }
 
 header h1{
@@ -26,17 +25,15 @@ header h1{
     overflow: auto;
     width: 100%; 
     height: 87%;
-    color:white;
     margin-bottom: 10px;
 }
 
 .rules{
-    background-color: blue;
     font-size: 40px;
     border-radius: 10px;
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(77, 80, 101);
+    background: var(--tg-theme-secondary-bg-color);
     margin-bottom: 20px;
 }
 
@@ -53,7 +50,7 @@ header h1{
 }
 
 [class^="item"]{
-    background-color: rgb(77, 80, 101);
+    background-color: var(--tg-theme-secondary-bg-color);
     text-align: center;
     font-size: large;
     border-radius: 25px;
@@ -71,12 +68,7 @@ header h1{
     /* Задайте стили для анимации появления элемента */
     opacity: 1;
     transform: translateY(0);
-}
-
-[class^="item"].show.show {
-    /* Задайте стили для анимации появления элемента */
-    opacity: 1;
-    transform: translateY(0);
+    
 }
 
 
@@ -102,7 +94,7 @@ button{
 
 .user-info{
     overflow: hidden;
-    background: rgb(77, 80, 101);
+    background: var(--tg-theme-secondary-bg-color);
     width: 80%; 
     height: 53px;
     border-radius: 35px; 
@@ -111,7 +103,6 @@ button{
     display: flex;
     justify-content: space-between;
     margin-right:20px ;
-    color: white;
 
 }
 
@@ -127,7 +118,7 @@ button{
 }
 
 .setings{
-    background-color: rgb(77, 80, 101);
+    background-color: var(--tg-theme-secondary-bg-color);
     width: 15%;
     height: 53px;
     border-radius: 35px;
